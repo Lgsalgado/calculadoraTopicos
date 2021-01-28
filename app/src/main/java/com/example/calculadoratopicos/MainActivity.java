@@ -9,7 +9,6 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     //Variables a utilizar
-
     boolean tan = false;
     boolean cos = false;
     boolean se = false;
@@ -31,7 +30,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        getSupportActionBar().setIcon(R.drawable.fondo); //vamos a poner icono en la cabecera
         //Llamar los botones
         Button n0 = (Button) findViewById(R.id.btn0);
         n0.setOnClickListener(this);
@@ -91,29 +89,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         preguntar.setOnClickListener(this);
 
     }
-
-    //Cuando se presione atras
-    @Override
-    public void onBackPressed() {
-        AlertDialog.Builder myBulid = new AlertDialog.Builder(this);
-        myBulid.setMessage("Desea salir de la calculadora??");
-        myBulid.setTitle("Cuidado");
-        myBulid.setPositiveButton("Si", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                finish();;
-            }
-        });
-        myBulid.setNegativeButton("No", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.cancel();
-            }
-        });
-        AlertDialog dialog = myBulid.create();
-        dialog.show();
-    }
-
     //Operaciones
     @Override
     public void onClick(View v) {
@@ -306,5 +281,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             pantalla.setText("Error");
         };
 
+    }
+    //Cuando se presione atras
+    @Override
+    public void onBackPressed() {
+        AlertDialog.Builder myBulid = new AlertDialog.Builder(this);
+        myBulid.setMessage("Desea salir de la calculadora??");
+        myBulid.setTitle("Cuidado");
+        myBulid.setPositiveButton("Si", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                finish();;
+            }
+        });
+        myBulid.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
+        AlertDialog dialog = myBulid.create();
+        dialog.show();
     }
 }
