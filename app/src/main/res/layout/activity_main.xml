@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -44,7 +42,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="55dp"
                 android:orientation="vertical"
-                android:text="SEN" />
+                android:text="sin"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
             <Button
                 android:id="@+id/btnExp"
@@ -100,7 +99,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="55dp"
                 android:orientation="vertical"
-                android:text="COS" />
+                android:text="cos"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
             <Button
                 android:id="@+id/btnraiz"
@@ -149,14 +149,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="55dp"
                 android:orientation="vertical"
-                android:text="LOG" />
+                android:text="log"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
             <Button
                 android:id="@+id/btntangente"
                 android:layout_width="wrap_content"
                 android:layout_height="55dp"
                 android:orientation="vertical"
-                android:text="TAN" />
+                android:text="tan"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
             <Button
                 android:id="@+id/btndelete"
@@ -215,7 +217,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="55dp"
                 android:orientation="vertical"
-                android:text="IN" />
+                android:text="ln"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
             <Button
                 android:id="@+id/btnBorrar"
@@ -256,6 +259,4 @@
         </LinearLayout>
 
     </LinearLayout>
-
-
 </RelativeLayout>
