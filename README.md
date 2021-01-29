@@ -20,8 +20,7 @@ Este el es archivo que contiene toda la parte lógica de nuestro proyecto donde 
 ### Nuestro proyecto consta de 3 funciones principales:
 
 * **protected void onCreate(Bundle savedInstanceState)** - Esta función corre directamente al momento de iniciar nuestra App.   
-* **public void onClick(View v)** - Aquí vamos a implementar dentro todas las funciones que van a realizar al momento de   
-  presionar los botones, son las operaciones y la toma de valores numéricos.   
+* **public void onClick(View v)** - Aquí vamos a implementar dentro todas las funciones que van a realizar al momento de presionar los botones, son las operaciones y la toma de valores numéricos.   
 * **public void onBackPressed()** - En esta función se declara las advertencias cuando el usuario presiona "atrás" ◀️
 
 ## Test de ejecución ✅
